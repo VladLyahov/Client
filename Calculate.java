@@ -1,9 +1,32 @@
 public class Calculate{
 	public static void main(String[] args){
 		System.out.println("Calculate work");
-		int first = Integer.valueOf(args[0]);
-		int second = Integer.valueOf(args[1]);
-		int summ = first + second;
-		System.out.println("Summ = " + summ);
+		double result;
+		double first = Double.valueOf(args[0]);
+		String stringAction = args[1];		
+		double second = Double.valueOf(args[2]);
+		char action = stringAction.charAt(0);
+		if(action == '+'){
+			result = first + second;
+			
+		}
+		else if(action == '-'){
+			result = first - second;
+		}
+		else if(action == '/'){
+			result = first / second;
+		}
+		else if(action == '*'){
+			result = first * second;
+		}
+		else if(action == '^'){
+			result = Math.pow(first, second);
+		}
+		else{
+			result = 0;
+		}
+		System.out.println("Result = " + result);
+		
+		
 	}
 }
