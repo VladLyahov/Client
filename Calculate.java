@@ -8,7 +8,6 @@ public class Calculate{
 		char action = stringAction.charAt(0);
 		if(action == '+'){
 			result = first + second;
-			
 		}
 		else if(action == '-'){
 			result = first - second;
