@@ -15,9 +15,9 @@ public class Calculate{
 		else if(action.equals("/")){
 			result = first / second;
 		}
-		else if(action.equals("*")){
-			result = first * second;
-		}
+		// else if(action.equals("*")){    not work ???
+		//	result = first * second;
+		// }
 		else if(action.equals("^")){
 			result = Math.pow(first, second);
 		}
