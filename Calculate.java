@@ -1,6 +1,6 @@
 public class Calculate{
 	public static void main(String[] args){
-		System.out.println("Calculate work test");
+		System.out.println("Calculate work");
 		double result;
 		double first = Double.valueOf(args[0]);
 		String action = args[1];		
