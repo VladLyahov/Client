@@ -7,17 +7,16 @@ public class Cat implements Pet{
 	/**
 	Базовая реализация питомца
 	*/
-	private final Animal animal;
+	private final String name;
 
-	public Cat(final Animal animal){
-		this.animal = animal;
+	public Cat(final String name){
+		this.name = name;
 	}
 	/**
 	(@inheritDoc)
 	*/
 	@Override
 	public void makeSound(){
-		this.animal.makeSound();
 		System.out.println("May, May");
 	}
 	/**
@@ -25,6 +24,6 @@ public class Cat implements Pet{
 	*/
 	@Override
 	public String getName(){
-		return this.animal.getName();
+		return this.name;
 	}
 }

@@ -7,24 +7,23 @@ public class Dog implements Pet{
 	/**
 	Базовая реализация питомца
 	*/
-	private final Animal animal;
+	private final String name;
 
-	public Dog(final Animal animal){
-		this.animal = animal;
+	public Dog(final String name){
+		this.name = name;
 	}
 	/**
 	(@inheritDoc)
 	*/
 	@Override
 	public void makeSound(){
-		this.animal.makeSound();
-		System.out.println("Gav, Gav");
+		System.out.println("Gav, gav");
 	}
 	/**
 	(@inheritDoc)
 	*/
 	@Override
 	public String getName(){
-		return this.animal.getName();
+		return this.name;
 	}
 }

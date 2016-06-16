@@ -4,16 +4,16 @@
 	@since 06.06.2016
 */
 public class Client{
-	private final String id;
+	private final String name;
 	private final Pet pet;
 
-	public Client(String id, Pet pet){
-		this.id = id;
+	public Client(String name, Pet pet){
+		this.name = name;
 		this.pet = pet;
 	}
 
-	public String getId(){
-		return this.id;
+	public String getName(){
+		return this.name;
 	}
 	public Pet getPet(){
 		return this.pet;
